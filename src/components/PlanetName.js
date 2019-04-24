@@ -18,7 +18,9 @@ componentDidMount() {
     return (
       <>
       <div onClick={() => this.props.history.push(`/planets/${id}`)}>
+      <div style={{color: "blue", cursor: "pointer"}}>
       {this.state.planet.name} 
+      </div>
       </div>
       
       </>

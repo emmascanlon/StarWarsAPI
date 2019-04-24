@@ -20,11 +20,10 @@ this.setState({id: ID})
     return (
       <Table.Row key={person.name}>
         <Table.Cell>
+          
           {person.name}
+      
         </Table.Cell>
-        <Table.Cell>
-          {person.mass}
-        </Table.Cell> 
         <Table.Cell>
           <PlanetName id={this.state.id} history={this.props.history} planet={person.homeworld}/>
         </Table.Cell>
